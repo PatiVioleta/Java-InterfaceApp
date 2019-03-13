@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="366.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainSceneController">
+   <children>
+      <ImageView fitHeight="404.0" fitWidth="580.0" layoutY="-7.0" pickOnBounds="true">
+         <effect>
+            <Blend mode="COLOR_BURN" opacity="0.18" />
+         </effect>
+         <image>
+            <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588704.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="325.0" layoutY="278.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#lab7Handler" text="Lab7">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="38.79" radius="17.4125" width="32.86" />
+               </effect></Button>
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#closeApp" text="Exit">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="38.79" radius="17.4125" width="32.86" />
+               </effect></Button>
+        </buttons>
+      </ButtonBar>
+      <AnchorPane blendMode="MULTIPLY" layoutX="102.0" layoutY="71.0" prefHeight="58.0" prefWidth="321.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="102.0">
+         <children>
+            <Label cache="true" layoutX="67.0" layoutY="1.0" text="CATALOG" textFill="#a4a4a4" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="37.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="46.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#a4a4a4" height="255.0" radius="127.0" spread="0.61" width="255.0" />
+         </effect>
+      </AnchorPane>
+      <Slider fx:id="slider" blockIncrement="0.0" layoutX="23.0" layoutY="340.0" majorTickUnit="13.0" max="13.0" minorTickCount="12" onMouseReleased="#saptamanaHandler" prefHeight="24.0" prefWidth="502.0" showTickMarks="true" snapToTicks="true" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="340.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Slider>
+      <TextField fx:id="textField" editable="false" layoutX="227.0" layoutY="285.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="23.0" layoutY="285.0" text="Saptamana curenta" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <BorderPane layoutX="10.0" layoutY="8.0" prefHeight="24.0" prefWidth="548.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#closeApp" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <ButtonBar layoutX="82.0" layoutY="195.0" prefHeight="40.0" prefWidth="396.0">
+         <buttons>
+          <Button fx:id="studentButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#studentHandler" prefHeight="30.0" prefWidth="118.0" text="STUDENTI" textAlignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="0.36190476190476195" endY="1.0">
+                     <stops>
+                        <Stop color="#979393" />
+                        <Stop color="#615b5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow height="62.27" radius="28.4125" spread="0.41" width="53.38" />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="temaButton" alignment="CENTER" cache="true" cacheHint="ROTATE" mnemonicParsing="false" onAction="#temaHandler" text="TEME" textAlignment="CENTER">
+               <effect>
+                  <DropShadow height="62.27" radius="28.4125" spread="0.41" width="53.38" />
+               </effect>
+               <textFill>
+                  <LinearGradient endX="0.3571428571428571" endY="1.0">
+                     <stops>
+                        <Stop color="#8d8d8d" />
+                        <Stop color="#615b5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="notaButton" mnemonicParsing="false" onAction="#notaHandler" text="NOTE" textAlignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="0.3571428571428571" endY="1.0">
+                     <stops>
+                        <Stop color="#8d8d8d" />
+                        <Stop color="#615b5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="57.825" radius="27.301250000000003" spread="0.41" width="53.38" />
+               </effect>
+            </Button>
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

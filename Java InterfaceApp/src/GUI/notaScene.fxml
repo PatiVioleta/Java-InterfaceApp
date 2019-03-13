@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NotaSceneController">
+   <children>
+      <SplitPane dividerPositions="0.3727544910179641" layoutY="26.0" prefHeight="373.0" prefWidth="641.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+         <items>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="tableView" prefHeight="371.0" prefWidth="228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="idSCol" prefWidth="60.0" text="ID_Student" />
+                        <TableColumn fx:id="idTCol" prefWidth="55.0" text="ID_Tema" />
+                        <TableColumn fx:id="notaCol" prefWidth="46.0" text="Nota" />
+                        <TableColumn fx:id="cadruCol" prefWidth="85.0" text="Cadru Didactic" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <ImageView fitHeight="375.0" fitWidth="385.0" layoutY="-2.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588704.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="saptamanaCurenta" editable="false" layoutX="200.0" layoutY="15.0" prefHeight="25.0" prefWidth="31.0" />
+                  <ComboBox fx:id="comboTema" layoutX="86.0" layoutY="49.0" onAction="#actualizareFeed" prefHeight="25.0" prefWidth="292.0" />
+                  <Label layoutX="37.0" layoutY="52.0" text="TEMA" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></Label>
+                  <RadioButton fx:id="nemotivRadioBtn" layoutX="37.0" layoutY="84.0" mnemonicParsing="false" onAction="#actualizareFeed" text="Nemotivat" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="motivRadioBtn" layoutX="201.0" layoutY="84.0" mnemonicParsing="false" onAction="#actualizareFeed" text="Motivat" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></RadioButton>
+                  <Label layoutX="36.0" layoutY="18.0" text="Saptamana curenta:" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="36.0" layoutY="120.0" text="STUDENT" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></Label>
+                  <ComboBox fx:id="numeStudent" layoutX="156.0" layoutY="117.0" prefWidth="150.0" promptText="Nume student" />
+                  <TextField fx:id="valoareNota" layoutX="157.0" layoutY="146.0" promptText="Nota primita" />
+                  <TextField fx:id="cadruDidactic" layoutX="157.0" layoutY="174.0" promptText="Nume cadru didactic" />
+                  <Label layoutX="38.0" layoutY="150.0" text="NOTA" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font></Label>
+                  <TextArea fx:id="textArea" layoutX="28.0" layoutY="216.0" prefHeight="108.0" prefWidth="343.0" promptText="Feedback" />
+                  <ButtonBar layoutX="89.0" layoutY="334.0" prefHeight="25.0" prefWidth="171.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#addHandler" text="Adauga">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.36190476190476195" endY="1.0">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#536349" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <effect>
+                              <InnerShadow height="32.06" radius="12.765" />
+                           </effect></Button>
+                        <Button mnemonicParsing="false" onAction="#cancelHandler" text="Close">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.36190476190476195" endY="1.0">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#536349" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <effect>
+                              <InnerShadow height="32.06" radius="12.765" />
+                           </effect></Button>
+                     </buttons>
+                  </ButtonBar>
+                  <Label layoutX="35.0" layoutY="178.0" text="Cadru didactic" textFill="#536349">
+                     <effect>
+                        <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="7.0" layoutY="397.0" prefHeight="43.0" prefWidth="641.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="41.0" prefWidth="606.0" style="-fx-background-color: #A4A4A4;">
+               <children>
+                  <ButtonBar layoutX="149.0" layoutY="1.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#filtreHandler" text="Filtre">
+                           <font>
+                              <Font name="Bookman Old Style" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <BorderPane layoutX="8.0" layoutY="2.0" prefHeight="24.0" prefWidth="501.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#cancelHandler" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

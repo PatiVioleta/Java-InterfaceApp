@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FiltreNotaController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588704.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="filter1" layoutX="448.0" layoutY="33.0" mnemonicParsing="false" onAction="#filter1Handler" text="Filter1">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="filter2" layoutX="448.0" layoutY="73.0" mnemonicParsing="false" onAction="#filter2Handler" text="Filter2">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="filter3" layoutX="448.0" layoutY="113.0" mnemonicParsing="false" onAction="#filter3Handler" text="Filter3">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="filter4" layoutX="270.0" layoutY="154.0" mnemonicParsing="false" onAction="#filter4Handler" text="Filter4">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <BorderPane layoutY="2.0" prefHeight="24.0" prefWidth="501.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#cancelHandler" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <TableView fx:id="tableView" layoutX="6.0" layoutY="200.0" prefHeight="208.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ComboBox fx:id="comboTema" layoutX="74.0" layoutY="33.0" prefHeight="25.0" prefWidth="292.0" promptText="Tema" />
+      <Label layoutX="25.0" layoutY="36.0" text="TEMA" textFill="#536349">
+         <effect>
+            <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+         </effect>
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="76.0" text="STUDENT" textFill="#536349">
+         <effect>
+            <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+         </effect>
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="numeStudent" layoutX="145.0" layoutY="73.0" prefHeight="25.0" prefWidth="221.0" promptText="Nume student" />
+      <Label layoutX="25.0" layoutY="116.0" text="Tema selectata + Grupa " textFill="#536349">
+         <effect>
+            <DropShadow color="WHITE" height="9.14" radius="13.7075" spread="0.83" width="47.69" />
+         </effect>
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="grupa" layoutX="217.0" layoutY="113.0" prefWidth="150.0" promptText="Grupa" />
+   </children>
+</AnchorPane>

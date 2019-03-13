@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="301.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TemaSceneController">
+   <children>
+      <SplitPane dividerPositions="0.49868073878627966" layoutY="26.0" prefHeight="490.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="368.0">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="183.0" prefWidth="299.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="descCol" prefWidth="75.0" text="Descriere" />
+                        <TableColumn fx:id="deadCol" prefWidth="75.0" text="Deadline" />
+                        <TableColumn fx:id="primireCol" prefWidth="117.0" text="Saptamana primire" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="287.0">
+               <children>
+                  <ImageView fitHeight="286.0" fitWidth="354.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588704.jpg" />
+                     </image>
+                  </ImageView>
+                  <ButtonBar layoutX="87.0" layoutY="223.0" prefHeight="38.0" prefWidth="148.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="223.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#addHandler" text="Adauga">
+                           <textFill>
+                              <LinearGradient endX="0.32857142857142846" endY="1.0">
+                                 <stops>
+                                    <Stop color="#536349" />
+                                    <Stop color="#536349" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow height="35.83" radius="18.155" width="38.79" />
+                           </effect></Button>
+                        <Button layoutX="290.0" layoutY="73.0" mnemonicParsing="false" onAction="#cancelHandler" text="Close">
+                           <textFill>
+                              <LinearGradient endX="0.32857142857142846" endY="1.0">
+                                 <stops>
+                                    <Stop color="#536349" />
+                                    <Stop color="#536349" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow height="35.83" radius="18.155" width="38.79" />
+                           </effect></Button>
+                     </buttons>
+                  </ButtonBar>
+                  <Label layoutX="46.0" layoutY="51.0" text="ID" textFill="#536349">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" height="32.74" radius="19.6075" spread="0.9" width="47.69" />
+                     </effect>
+                  </Label>
+                  <TextField layoutX="119.0" layoutY="49.0" promptText="ID" />
+                  <Label layoutX="46.0" layoutY="87.0" text="Descriere" textFill="#536349">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" height="32.74" radius="19.6075" spread="0.9" width="47.69" />
+                     </effect>
+                  </Label>
+                  <TextField layoutX="119.0" layoutY="85.0" promptText="Descriere" />
+                  <Label layoutX="46.0" layoutY="127.0" text="Primire" textFill="#536349">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" height="32.74" radius="19.6075" spread="0.9" width="47.69" />
+                     </effect>
+                  </Label>
+                  <TextField layoutX="119.0" layoutY="125.0" promptText="Primire" />
+                  <Label layoutX="46.0" layoutY="167.0" text="Deadline" textFill="#536349">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" height="32.74" radius="19.6075" spread="0.9" width="47.69" />
+                     </effect>
+                  </Label>
+                  <TextField layoutX="119.0" layoutY="165.0" promptText="Deadline" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <BorderPane layoutX="10.0" layoutY="8.0" prefHeight="24.0" prefWidth="501.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#cancelHandler" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

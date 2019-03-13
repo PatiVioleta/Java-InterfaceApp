@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="281.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PreviewNotaController">
+   <children>
+      <ImageView fitHeight="318.0" fitWidth="556.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <InnerShadow height="255.0" radius="66.215" width="11.86" />
+         </effect>
+         <image>
+            <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588707.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="107.0" layoutY="204.0" prefHeight="51.0" prefWidth="269.0">
+         <buttons>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addHandler" prefHeight="30.0" prefWidth="118.0" style="-fx-border-color: #536349;" text="CONFIRMA" textAlignment="CENTER" underline="true">
+               <textFill>
+                  <LinearGradient endX="0.36190476190476195" endY="1.0">
+                     <stops>
+                        <Stop color="#979393" />
+                        <Stop color="#615b5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow height="0.0" radius="13.585" width="56.34" />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" cache="true" cacheHint="ROTATE" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#cancelHandler" style="-fx-border-color: #536349;" text="CANCEL" textAlignment="CENTER" underline="true">
+               <effect>
+                  <InnerShadow height="0.0" radius="13.585" width="56.34" />
+               </effect>
+               <textFill>
+                  <LinearGradient endX="0.3571428571428571" endY="1.0">
+                     <stops>
+                        <Stop color="#8d8d8d" />
+                        <Stop color="#615b5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <AnchorPane layoutX="107.0" layoutY="35.0" prefHeight="27.0" prefWidth="296.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="98.0">
+         <children>
+            <Label layoutX="89.0" layoutY="1.0" prefHeight="32.0" prefWidth="118.0" text="PREVIEW" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="89.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="21.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5111111111111111" centerY="0.5047619047619047" radius="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow height="47.69" radius="24.8275" width="53.62" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="43.0" layoutY="76.0" text="Tema" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label layoutX="43.0" layoutY="122.0" text="Student" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label layoutX="43.0" layoutY="146.0" text="Nota" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label fx:id="label" layoutX="43.0" layoutY="170.0" text="+" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label fx:id="label1" layoutX="43.0" layoutY="100.0" prefHeight="24.0" prefWidth="454.0" text="1" textFill="#536349" wrapText="true">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="25.205" radius="18.40375" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label fx:id="label2" layoutX="151.0" layoutY="122.0" text="2" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label fx:id="label3" layoutX="151.0" layoutY="146.0" text="3" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <Label fx:id="label4" layoutX="151.0" layoutY="170.0" text="4" textFill="#536349">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="12.1025" spread="0.85" width="50.41" />
+         </effect>
+      </Label>
+      <BorderPane layoutY="-2.0" prefHeight="24.0" prefWidth="501.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#cancelHandler" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

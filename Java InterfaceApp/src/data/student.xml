@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<studenti>
+    <student id="1">
+        <nume>Ana</nume>
+        <grupa>226</grupa>
+        <email>@ana</email>
+    </student>
+    <student id="2">
+        <nume>Alin</nume>
+        <grupa>225</grupa>
+        <email>@alin</email>
+    </student>
+    <student id="3">
+        <nume>Catalina</nume>
+        <grupa>223</grupa>
+        <email>@cata</email>
+    </student>
+    <student id="4">
+        <nume>Oana</nume>
+        <grupa>221</grupa>
+        <email>@oana</email>
+    </student>
+    <student id="5">
+        <nume>Cristi</nume>
+        <grupa>224</grupa>
+        <email>@cristi11</email>
+    </student>
+</studenti>

@@ -1,0 +1,8 @@
+1#Anastasia#221#email1
+2#Bianca#222#email2
+3#Corina#225#email3
+4#Alina#223#alina
+5#Doru#223#@doru
+6#lorena#225#lore@
+7#Minodora#224#@minodo
+8#Iuliaa#222#@email

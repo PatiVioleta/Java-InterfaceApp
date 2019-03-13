@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="397.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.StudentSceneController">
+   <children>
+      <ImageView fitHeight="397.0" fitWidth="362.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/pati/Desktop/UNIV/MAP/lab8/images/grunge-pattern-a-1588704.jpg" />
+         </image>
+      </ImageView>
+      <SplitPane layoutY="26.0" prefHeight="320.0" prefWidth="384.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+        <items>
+          <AnchorPane prefHeight="311.0" prefWidth="382.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="321.0" prefWidth="382.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="47.0" text="ID" />
+                      <TableColumn fx:id="numeCol" prefWidth="119.0" text="Nume" />
+                        <TableColumn fx:id="grupaCol" prefWidth="65.0" text="Grupa" />
+                        <TableColumn fx:id="emailCol" prefWidth="128.0" text="Email" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <ButtonBar layoutX="-41.0" layoutY="347.0" prefHeight="49.0" prefWidth="389.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#addHandler" text="Adauga">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3714285714285715" endY="1.0">
+                     <stops>
+                        <Stop color="#536349" />
+                        <Stop color="#5e6b55" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow choke="0.05" height="32.86" radius="18.155" width="41.76" />
+               </effect>
+            </Button>
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#updateHandler" text="Modifica">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3714285714285715" endY="1.0">
+                     <stops>
+                        <Stop color="#536349" />
+                        <Stop color="#5e6b55" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow choke="0.05" height="32.86" radius="18.155" width="41.76" />
+               </effect>
+            </Button>
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteHandler" text="Sterge">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3714285714285715" endY="1.0">
+                     <stops>
+                        <Stop color="#536349" />
+                        <Stop color="#5e6b55" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow choke="0.05" height="32.86" radius="18.155" width="41.76" />
+               </effect>
+            </Button>
+            <Button layoutX="290.0" layoutY="73.0" mnemonicParsing="false" onAction="#cancelHandler" text="Close">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3714285714285715" endY="1.0">
+                     <stops>
+                        <Stop color="#536349" />
+                        <Stop color="#5e6b55" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow choke="0.05" height="32.86" radius="18.155" width="41.76" />
+               </effect>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <BorderPane layoutX="5.0" layoutY="2.0" prefHeight="25.0" prefWidth="340.0" style="-fx-background-color: #A4A4A4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow height="32.86" radius="18.155" width="41.76" />
+         </effect>
+         <right>
+            <Button mnemonicParsing="false" onAction="#cancelHandler" prefHeight="25.0" prefWidth="26.0" text="X" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
